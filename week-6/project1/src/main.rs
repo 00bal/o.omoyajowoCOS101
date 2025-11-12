@@ -34,7 +34,7 @@ fn main() {
 
     if food_code == "P" || food_code == "p" {
         price = p;
-        food_name = "Poundo Yam/Edinkaiko Soup";
+        food_name = "Pounded Yam/Edinkaiko Soup";
     } 
 
     else if food_code == "F" || food_code == "f" {
@@ -62,21 +62,21 @@ fn main() {
         return; 
     }
 
-    let intial_P = price * quantity;
+    let initial_p = price * quantity;
     let mut discount:f32 = 0.0;
 
-    if intial_P > 10000.0 {
-        discount = intial_P * 0.05;
+    if initial_p > 10000.0 {
+        discount = initial_p * 0.05;
     }
 
-    let final_P = intial_P - discount;
+    let final_p = initial_p - discount;
 
     println!("\n|Summary of order|");
     println!("Food:       {}", food_name);
     println!("Quantity:   {}", quantity);
     println!("----------------------");
-    println!("Total:      N{}", intial_P);
+    println!("Total:      N{}", initial_p);
     println!("Discount:   N{}", discount);
-    println!("Final Price: N{}", final_P);
+    println!("Final Price: N{}", final_p);
 
 }
