@@ -29,12 +29,13 @@ fn main() {
     let quantity:f32 = quantity_input.trim().parse().expect("invalid amount");
 
     let food_code = food_code.trim();
+    
     let mut price:f32 = 0.0;
     let mut food_name = ""; 
 
     if food_code == "P" || food_code == "p" {
         price = p;
-        food_name = "Pounded Yam/Edinkaiko Soup";
+        food_name = "Poundo Yam/Edinkaiko Soup";
     } 
 
     else if food_code == "F" || food_code == "f" {
@@ -62,21 +63,21 @@ fn main() {
         return; 
     }
 
-    let initial_p = price * quantity;
+    let intial_P = price * quantity;
     let mut discount:f32 = 0.0;
 
-    if initial_p > 10000.0 {
-        discount = initial_p * 0.05;
+    if intial_P > 10000.0 {
+        discount = intial_P * 0.05;
     }
 
-    let final_p = initial_p - discount;
+    let final_P = intial_P - discount;
 
     println!("\n|Summary of order|");
     println!("Food:       {}", food_name);
     println!("Quantity:   {}", quantity);
     println!("----------------------");
-    println!("Total:      N{}", initial_p);
+    println!("Total:      N{}", intial_P);
     println!("Discount:   N{}", discount);
-    println!("Final Price: N{}", final_p);
+    println!("Final Price: N{}", final_P);
 
 }
