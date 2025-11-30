@@ -1,0 +1,4 @@
+Types of drinks sold: Lager, Stout, Non-Alcoholic
+Lager drinks: 33 Export, Desperados, Goldberg, Gulder, Heineken, Star
+Stout drinks: Legend, Turbo king, Williams
+Non-Alcoholic drinks: Maltina, Amste Malta, Malta Gold, Fayrouz
